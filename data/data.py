@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 
 class Data(object):
     def __init__(self):
-        self.brand = np.fromfile('BRAND.dat', sep = ',', dtype = np.dtype([('BrandCode', str),('BrandDescription',str)]))
+        self.brand = np.fromfile('BRAND.dat', sep = ',')
         self.campaign = np.fromfile('CAMPAIGN.dat')
         self.card = np.fromfile('CARD.dat')
         self.category = np.fromfile('CATEGORY.dat')
